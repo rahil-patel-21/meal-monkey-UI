@@ -2,12 +2,12 @@
 import 'package:flutter/material.dart';
 //Library Imports
 import 'package:flutter_svg/svg.dart';
-import 'package:mealmonkey/screens/custom_widgets/animations/animated_slider.dart';
 //Local Imports
 import '../../app_theme.dart';
 import '../../constants/resources.dart';
 import '../../constants/strings.dart';
 import '../../utils.dart';
+import '../../screens/custom_widgets/animations/animated_slider.dart';
 
 class OnBoardingPage extends StatefulWidget {
   @override
@@ -100,7 +100,8 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
 
   Widget _nextButton() {
     return AnimatedSlider(
-      dy: 6.0,
+      milliseconds: 800,
+      dx: -5.0,
       child: Container(
         alignment: Alignment.center,
         width: double.infinity,
